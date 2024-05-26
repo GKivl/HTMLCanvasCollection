@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/HTMLCanvasCollection/style.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Particles</title>
+    <style>
+        canvas {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="kanvas"></canvas>
+
+    <button onclick="reset()">
+        Reset
+    </button>
+
+    <fieldset id="customization">
+        <legend>Customization</legend>
+        <div>
+            <label for="posArrLen">Previous stored position amount(alters velocity)</label>
+            <input oninput="update()" type="number" id="posArrLen">
+        </div>
+        <div>
+            <label for="maxLifeLen">Particle life length</label>
+            <input oninput="update()" type="number" id="maxLifeLen">
+        </div>
+        <div>
+            <label for="rad">Particle radius</label>
+            <input oninput="update()" type="number" id="rad">
+        </div>
+        <div>
+            <label for="veloDiv">Velocity divider</label>
+            <input oninput="update()" type="number" id="veloDiv">
+        </div>
+        <div>
+            <label for="rotationDiv">Rotation divider</label>
+            <input oninput="update()" type="number" id="rotationDiv">
+        </div>
+        <div>
+            <label for="hue">Hue</label>
+            <input oninput="update()" type="number" id="hue">
+        </div>
+    </fieldset>
+
+    <script src="script.js"></script>
+</body>
+</html>

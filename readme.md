@@ -6,4 +6,7 @@
     <li>
         <a href="https://viesf.github.io/HTMLCanvasCollection/starz">Stars</a>
     </li>
+    <li>
+        <a href="https://viesf.github.io/HTMLCanvasCollection/partiklez">Particles</a>
+    </li>
 </ul>
